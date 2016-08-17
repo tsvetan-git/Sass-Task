@@ -1,0 +1,316 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 11, 2016, 5:35:48 PM
+    Author     : borisov
+
+    Cinema Template -  Sass Theme
+    Version: 0.2.2 {bootstrap,scss} // Version 0.3 in progress  
+
+*/
+/* BASE - Base styles, variables, mixins, etc */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/base\/_normalize\.scss}line{font-family:\0000318}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: serif;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/base\/_normalize\.scss}line{font-family:\0000328}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/base\/_normalize\.scss}line{font-family:\0000331}}
+body {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/base\/_normalize\.scss}line{font-family:\0000334}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/base\/_normalize\.scss}line{font-family:\0000337}}
+blockquote, q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/base\/_normalize\.scss}line{font-family:\0000341}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/base\/_normalize\.scss}line{font-family:\0000345}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000322}}
+.navbar-header, #navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 0.8em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000328}}
+.navbar-brand {
+  font-size: 4.5em;
+  font-weight: bolder;
+  padding-top: 26px;
+  padding-bottom: 27px;
+  color: white !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000336}}
+.nav-primary {
+  margin-top: 143px;
+  background-color: #f73a4c;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000344}}
+.nav-pills > li > a {
+  font-size: 1.2em;
+  border-radius: 30px;
+  padding: 13px 20px;
+  margin-right: 5px;
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000353}}
+.nav-pills > li > a:focus,
+.nav-pills > li > a:hover {
+  color: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000358}}
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a {
+  background-color: #eee;
+  color: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000363}}
+.show-images {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000367}}
+.showcase {
+  line-height: 0 !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000370}}
+.showcase-content {
+  position: absolute;
+  top: 700px;
+  left: 33%;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  width: 700px;
+  height: 100px;
+  color: whitesmoke; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000380}}
+  .showcase-content h1 {
+    font-size: 4em;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px #000;
+    padding-bottom: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000386}}
+  .showcase-content q {
+    font-size: 1.1em;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000393}}
+.btn-group {
+  margin-top: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\0000396}}
+.btn-default {
+  color: #fff;
+  background: none;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003103}}
+.btn-default:hover {
+  color: #fff;
+  background: #f73a4c;
+  border-color: #f73a4c;
+  transition: 0.3s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003110}}
+.btn {
+  font-size: 10px;
+  padding: 25px 0px;
+  width: 180px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 300;
+  border-radius: 40px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003124}}
+.page-nav {
+  position: absolute;
+  left: 20%;
+  top: 1200px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003128}}
+  .page-nav a img {
+    margin-top: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003131}}
+  .page-nav a img:hover {
+    margin-top: 20px;
+    transition: 0.5s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003137}}
+.movies-category {
+  color: whitesmoke;
+  background-color: #222; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003140}}
+  .movies-category h2 {
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px #000;
+    padding: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003148}}
+  .movies-category p {
+    font-size: 1em;
+    opacity: 0.8;
+    padding: 10px;
+    margin-bottom: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003154}}
+  .movies-category li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    opacity: 0.5;
+    left: 0;
+    top: 5px;
+    line-height: inherit;
+    margin: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003164}}
+    .movies-category li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003174}}
+.more-movies {
+  color: whitesmoke;
+  background-color: #333; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003178}}
+  .more-movies h2 {
+    font-size: 4em;
+    font-weight: bolder;
+    text-align: center;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px #000;
+    padding: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003186}}
+  .more-movies .img-box {
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003190}}
+  .more-movies img:hover {
+    transform: scale(1.25);
+    transition: 500ms; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003195}}
+  .more-movies .row {
+    position: relative;
+    display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003199}}
+  .more-movies .view-body {
+    text-align: center;
+    position: relative;
+    bottom: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003204}}
+  .more-movies .icon a {
+    margin: 10px;
+    color: whitesmoke !important;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003209}}
+  .more-movies .icon a:hover {
+    color: #f73a4c !important;
+    transition: 0.3s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003213}}
+  .more-movies .title {
+    margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003216}}
+    .more-movies .title h5 a {
+      text-decoration: none;
+      font-size: 1.5em;
+      color: whitesmoke !important;
+      font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003225}}
+.testimonials {
+  color: whitesmoke;
+  background-color: #f73a4c;
+  padding: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003229}}
+  .testimonials h2 {
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px #000;
+    padding: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003237}}
+  .testimonials p {
+    text-align: center;
+    font-size: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003241}}
+  .testimonials .person {
+    text-align: center;
+    font-size: 5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003245}}
+  .testimonials .name {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003251}}
+  .testimonials .role {
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003257}}
+.mail {
+  color: whitesmoke;
+  background-color: #222;
+  padding: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/opt\/lampp\/htdocs\/projects\/Task07_1\/public_html\/scss\/main\.scss}line{font-family:\00003261}}
+  .mail h2 {
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px #000;
+    padding: 40px; }
